@@ -41,7 +41,7 @@ class WeatherBot:
             await message.answer("Error")
     
     async def start_handler(self, message: types.Message):
-        await message.answer(f"Hello 👋, Mr. {hbold(message.from_user.full_name)}!")
+        await message.answer(f"Hello ✅, Mr. {hbold(message.from_user.full_name)}!")
     
     async def start(self):
         await self.dp.start_polling(self.bot)
